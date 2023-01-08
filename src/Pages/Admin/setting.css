@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+.setting {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.setting .left-s {
+    flex: 1;
+}
+.setting .right-s {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}

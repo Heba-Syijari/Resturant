@@ -1,0 +1,107 @@
+.navbar-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
+  background-image: radial-gradient(var(--blur2) , var(--blur2)),url('/public/icons/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0 0 20px 3px rgb(232, 102, 67);
+  color: white;
+  margin-bottom: 35px;
+  padding: 0px 20px;
+}
+.navbar-mobile .logo {
+    width: 60px;
+    height: 60px;
+}
+.navbar-mobile .nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+  display: none;
+}
+
+.navbar-mobile .nav-links-open {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  /* top: 12%;
+  right: 0;*/
+  left: 0;
+  top: 10%;
+  width: 240px;
+  height: 100%;
+  z-index: 1000;
+  list-style: none;
+  background-image: radial-gradient(var(--blur2) , var(--blur2)),url('/public/icons/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0 0 20px 3px rgb(232, 102, 67);
+  transition: all 5s ease-out;
+  padding-top: 1rem;
+  margin: 0.5rem; 
+  border-radius: 10px;
+  
+}
+.navbar-mobile ul li {
+  list-style: none;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+}
+.navbar-mobile ul li .i{
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+  text-align: center;
+}
+.navbar-mobile ul li a span{
+  opacity: 1;
+  font-weight: 550;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+
+.navbar-mobile ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  white-space: nowrap;
+}
+
+.navbar-mobile ul li a.active {
+  background-color: rgb(245, 171, 131);
+}
+.navbar-mobile ul li a:hover {
+  background-color: rgb(245, 171, 131);
+}
+
+.navbar-mobile .mobile-mene-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 769px) and (max-width: 1399px) {
+  .navbar-mobile {
+      display: none;
+  }
+  }
+
+[dir="rtl"] .navbar-mobile.active .logo_content .list{
+  right: 75%;
+}
+[dir="rtl"] .navbar-mobile ul li .i{
+  margin-right: 0px;
+  margin-left: 15px;
+}
+[dir="rtl"] .navbar-mobile .nav-links-open {
+  right: 0;
+}

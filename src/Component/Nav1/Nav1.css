@@ -1,0 +1,17 @@
+.navbar-big {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    background-image: radial-gradient(var(--blur2) , var(--blur2)),url('/public/icons/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 20px 3px rgb(232, 102, 67);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-big {
+        display: none;
+    }
+    }
